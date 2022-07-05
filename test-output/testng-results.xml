@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">User should open the browser and navigate to the URL (FAILED : 12s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User is on securian public facing application (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User provides all the required fields in the application to calculate the savings (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user will be able to see the total savings after his retirement with out social securoty benefits (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User should open the browser and navigate to the URL (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User is on securian public facing application (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User provides all the required fields in the application to calculate the savings with SSI (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user will be able to see the total savings after his retirement with social securoty benefits (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-07-06T00:29:00 IST" name="Default suite" finished-at="2022-07-06T00:29:14 IST" duration-ms="13614">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner@35cabb2a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-07-06T00:29:00 IST" name="Default test" finished-at="2022-07-06T00:29:14 IST" duration-ms="13614">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestRunner@35cabb2a]" started-at="2022-07-06T00:29:00 IST" name="setUpClass" finished-at="2022-07-06T00:29:01 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner@35cabb2a]" started-at="2022-07-06T00:29:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-06T00:29:14 IST" duration-ms="12812" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Retirement savings of a person without social security benefits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Retirement savings calculation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HYDPCM404434L', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f52028043fd627a10c1dad9906613166, get {url=https://www.securian.com/insights-tools/retirement-calculator.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Vatte.Kumar\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64076/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f52028043fd627a10c1dad9906613166]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HYDPCM404434L', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f52028043fd627a10c1dad9906613166, get {url=https://www.securian.com/insights-tools/retirement-calculator.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Vatte.Kumar\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64076/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f52028043fd627a10c1dad9906613166
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+at util.testBase.initialization(testBase.java:55)
+at stepdefinition.RetirementSavings_Stepdefs.user_should_open_the_browser_and_navigate_to_the_URL(RetirementSavings_Stepdefs.java:37)
+at ✽.User should open the browser and navigate to the URL(src/main/java/Features/retirement.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User should open the browser and navigate to the URL (FAILED : 12s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User is on securian public facing application (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User provides all the required fields in the application to calculate the savings (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user will be able to see the total savings after his retirement with out social securoty benefits (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner@35cabb2a]" started-at="2022-07-06T00:29:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-06T00:29:14 IST" duration-ms="253" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Retirement savings of a person with social security benefits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Retirement savings calculation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at util.testBase.initialization(testBase.java:46)
+at stepdefinition.RetirementSavings_Stepdefs.user_should_open_the_browser_and_navigate_to_the_URL(RetirementSavings_Stepdefs.java:37)
+at ✽.User should open the browser and navigate to the URL(src/main/java/Features/retirement.feature:5)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HYDPCM404434L', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:226)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at util.testBase.initialization(testBase.java:46)
+at stepdefinition.RetirementSavings_Stepdefs.user_should_open_the_browser_and_navigate_to_the_URL(RetirementSavings_Stepdefs.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at cucumber.runtime.Utils$1.call(Utils.java:26)
+at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+at cucumber.runtime.Utils.invoke(Utils.java:20)
+at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+at cucumber.runner.TestStep.run(TestStep.java:42)
+at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+at cucumber.runner.TestCase.run(TestCase.java:47)
+at cucumber.runner.Runner.runPickle(Runner.java:44)
+at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:56)
+at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User should open the browser and navigate to the URL (FAILED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User is on securian public facing application (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User provides all the required fields in the application to calculate the savings with SSI (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user will be able to see the total savings after his retirement with social securoty benefits (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@35cabb2a]" started-at="2022-07-06T00:29:14 IST" name="tearDownClass" finished-at="2022-07-06T00:29:14 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
