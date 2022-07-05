@@ -10,19 +10,21 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import BussinesMethods.RetirementSavings_Methods;
 
+//********************************************************************************************************************************
 // This step definition class acts as a glue code between feature file and bussiness methods.
+//********************************************************************************************************************************
 public class RetirementSavings_Stepdefs {
 	testBase TB = new testBase();
 	WebDriver driver;
 
-	// To kill the instance of chromedriver from taskmanager.
+	//***********  To kill the instance of chromedriver from taskmanager *******************************************
 	@Before
 	public void KillChromeDriver() throws IOException {
 		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 		
 	}
 	
-	// This method is used to close the broswer.
+	//**********   This method is used to close the broswer ********************************************************
 	@After
 	public void tearDown() throws InterruptedException {
 		driver.quit();
@@ -57,7 +59,7 @@ public class RetirementSavings_Stepdefs {
 		RetirementSavings_Methods.ValidateBenefits(driver);
 	}
 	
-	// ************   Step definition for "Retirement savings of a person with social security benefits" ****************** 
+	// ************   Step definition for "Retirement savings of a person with social security benefits" **********************
 	@When("User provides all the required fields in the application to calculate the savings with SSI")
 	public void user_provides_all_the_required_fields_in_the_application_to_calculate_the_savings_with_SSI() throws InterruptedException, IOException {
 		RetirementSavings_Methods.RetirementBenefitswithSSI(driver);

@@ -1,5 +1,8 @@
 package Pages;
 
+//********************************************************************************************************************************
+//This DefaultValueCalculatorPage savings class is used to maintain the locators of all the webelements in this page
+//********************************************************************************************************************************
 public class DefaultValueCalculatorPage {
 	
 //  *********** Adjust Default values Locators *******************************

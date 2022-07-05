@@ -1,5 +1,9 @@
 package Pages;
 
+
+//********************************************************************************************************************************
+//This ResultsPage savings class is used to maintain the locators of all the webelements in this page
+//********************************************************************************************************************************
 public class ResultsPage {
 
 	//  ***********  Locators in results page   **************************

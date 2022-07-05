@@ -1,5 +1,8 @@
 package Pages;
 
+//********************************************************************************************************************************
+//This PreRetirmentCalcutationPage savings class is used to maintain the locators of all the webelements in this page
+//********************************************************************************************************************************
 public class PreRetirmentCalcutationPage {
 
 	public static final String HomePage_Title_Xpath = "//img[@class='dsg-nav-logo']";
