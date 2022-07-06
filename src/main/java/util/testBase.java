@@ -55,7 +55,7 @@ public class testBase {
 
 		// This Method is usd to open the URL that is provided
 		driver.get(URL);
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		// To maximize the broswer screen
 		driver.manage().window().maximize();
 

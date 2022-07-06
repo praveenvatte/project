@@ -70,7 +70,7 @@ public class RetirementSavings_Methods {
 		//********* Click on Calculate button to see the retirement savings ****************************************************
 		WebElement Calculate = driver.findElement(By.xpath(PreRetirmentCal.Calculate_Button_Xpath));
 		js.executeScript("arguments[0].click();", Calculate);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 	}
 
@@ -82,12 +82,15 @@ public class RetirementSavings_Methods {
 		String Result =	driver.findElement(By.xpath(ResultsPage.Result_text_xpath)).getText();
 
 		Assert.assertTrue(Result.equalsIgnoreCase("Results"));
+		Thread.sleep(2000);
 
 		//************* Minimum amount required to retire from result page ********************
 		String MinimumAmount =driver.findElement(By.xpath(ResultsPage.MinimumAmountToRetire_Xpath)).getText();
 		System.out.println("Minimum amout required to retire: "+ MinimumAmount);
 
 		driver.quit();
+		Thread.sleep(10000);
+
 	}
 
 	//*****************************************************************************************************************************************
@@ -190,8 +193,54 @@ public class RetirementSavings_Methods {
 		//********** Click on Calculate button to see the retirement savings ***********************************
 		WebElement Calculate = driver.findElement(By.xpath(PreRetirmentCal.Calculate_Button_Xpath));
 		js.executeScript("arguments[0].click();", Calculate);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 	}
 
+	//*****************************************************************************************************************************************
+	// This SkipMandatoryFields method is used to check whether proper error message is displayed when mandatory fields are not provided
+	//*****************************************************************************************************************************************
+	public static void SkipMandatoryFields(WebDriver driver) throws InterruptedException, IOException {
+
+		sheet = baseClass.getSheetValue();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+
+		// Pre-Retirement Calculator Page fields
+		driver.findElement(By.id(PreRetirmentCal.Age_TxtBox_ID)).sendKeys(Keys.chord(sheet.getRow(1).getCell(0).getStringCellValue().toString()));
+		Thread.sleep(2000);
+		driver.findElement(By.id(PreRetirmentCal.RetirementAge_TxtBox_ID)).sendKeys(Keys.chord(sheet.getRow(1).getCell(1).getStringCellValue().toString()));
+
+		// ****************** Current Income filed value is skipped to check the error message ********************************************
+
+		WebElement SpouseIncome= driver.findElement(By.id(PreRetirmentCal.SpouseIncome_TxtBox_ID));
+		SpouseIncome.click();
+		SpouseIncome.sendKeys(Keys.chord(sheet.getRow(1).getCell(3).getStringCellValue()));
+
+		WebElement CurrentSavings =driver.findElement(By.id(PreRetirmentCal.CurrentSavings_TxtBox_ID));
+		CurrentSavings.click();
+		CurrentSavings.sendKeys(Keys.chord(sheet.getRow(1).getCell(4).getStringCellValue()));
+
+		driver.findElement(By.id(PreRetirmentCal.CurrentAnnualSavings_TxtBox_ID)).sendKeys(Keys.chord(sheet.getRow(1).getCell(5).getStringCellValue()));
+
+		driver.findElement(By.id(PreRetirmentCal.SavingsIncreaseRate_TxtBox_ID)).sendKeys(Keys.chord(sheet.getRow(1).getCell(6).getStringCellValue()));
+
+		//********** Click on Calculate button to see the retirement savings ***********************************
+		WebElement Calculate = driver.findElement(By.xpath(PreRetirmentCal.Calculate_Button_Xpath));
+		js.executeScript("arguments[0].click();", Calculate);
+		Thread.sleep(3000);
+
+	}
+	
+	//*****************************************************************************************************************************************
+	// This ErrorValidation method is used to check whether proper error message is displayed when mandatory fields are not provided
+	//*****************************************************************************************************************************************
+	public static void errorValidation(WebDriver driver) {
+		
+		String errorMessage = driver.findElement(By.xpath(PreRetirmentCal.ErrorMessage_Txt_Xpath)).getText();
+		
+		Assert.assertEquals(errorMessage, "Please fill out all required fields");
+		
+		
+	}
 }

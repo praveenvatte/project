@@ -21,4 +21,5 @@ public class PreRetirmentCalcutationPage {
 	public static final String Marriage_RadioBtn_Xpath = "//input[@id='married']";
 	public static final String SocialSecurityOverrideAmount_TxtBox_Xpath = "//input[@id='social-security-override']";
 	public static final String Calculate_Button_Xpath = "//button[@class='dsg-btn-primary btn-block']";
+	public static final String ErrorMessage_Txt_Xpath = "//p[@id='calculator-input-alert-desc']";
 }
